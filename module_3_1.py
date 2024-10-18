@@ -18,11 +18,8 @@ def string_info(string):
 def is_contains(string, list_to_search, item=None):
     count_calls()
     lower_string = string.lower()
-        if lower_string in (item.lower() for item in list_to_search):
-        print(True)
-
-        else:
-        print(False)
+   
+    return lower_string in (item.lower() for item in list_to_search)  
 
 
 print(string_info('Capybara'))
